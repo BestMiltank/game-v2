@@ -1,0 +1,543 @@
+{
+  "equipment_id": 90336,
+  "source": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 16782
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 16777216,
+      "m_PathID": 47898951680
+    },
+    "m_Name": "",
+    "isNeedSorting": true,
+    "isSortingComplex": false,
+    "sortingObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "index_str": "#J001",
+    "m_dropConditions": {
+      "gameRound": 1,
+      "stageLevel": 0,
+      "stageType": 0,
+      "stageIndex": 0
+    },
+    "itemName": "Iron Broadsword",
+    "price": 20,
+    "icon": {
+      "m_FileID": 0,
+      "m_PathID": 5632
+    },
+    "visible": true,
+    "itemNameForShow": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "Iron Broadsword",
+        "铁质大剑",
+        "Espadón de Hierro",
+        "Железный палаш ",
+        "鉄の大剣",
+        "Breitschwert aus Eisen",
+        "鐵質大劍",
+        "Spadone di Ferro",
+        "Large Épée de Fer"
+      ]
+    },
+    "intro": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "<color=#cd54ff>Two-handed</color> - A big, heavy, iron sword. \\nATK+13. SKILL: Heavy stab. ",
+        "<color=#cd54ff>双手</color> - 一把沉重的铁质大剑. \\n攻击+13. 技能: 重突刺. ",
+        "<color=#cd54ff>Dos Manos</color> - Espada de hierro pesado. \\nATK+13. HABILIDAD: Corte Pesado. ",
+        "<color=#CD54FF>Двуручный меч</color> - Большой, тяжёлый, железный меч. \\nАТК+13. Навык: выпад. ",
+        "<color=#cd54ff>両手武器</color> - 重い鉄の大剣. \\n攻撃+13. スキル: 猛突き. ",
+        "<color=#cd54ff>Zweihändig</color> - Ein großes, schweres Eisenschwert. \\nANG+13. FÄHIGKEIT: Starker Angriff. ",
+        "<color=#4EEE94>單手</color> - 靈魂結晶的碎片, 黑色的紋絡充滿邪氣. \\n攻擊+30. 防禦+5. 技能: 靈魂結晶蟲.",
+        "<color=#cd54ff>A due mani</color> - Una spada di ferro grande e pesante.\\nATT+13. ABILITÀ: Taglio profondo. ",
+        "<color=#cd54ff>À deux mains</color> - Une grosse épée de fer lourde. \\nATK + 13. Compétence: Coup Lourd."
+      ]
+    },
+    "pickupDialog": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "type": 0,
+    "category": 0,
+    "main_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 10701
+    },
+    "off_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmet_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmetBack_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "head_spEffect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "haircut_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "clothes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoulder_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "glove_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "foot_effect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "reserve": "",
+    "basicAttributes": [
+      {
+        "type": 0,
+        "value": 13,
+        "reserve": "",
+        "index": 0
+      }
+    ],
+    "weaponAdditionAttributes": [],
+    "weaponCategory_of_additionAttributes": [],
+    "appendRandomAttr1": 20,
+    "appendRandomAttr2": 0,
+    "appendRandomAttr3": 0,
+    "fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "special_fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "isRandomSkill": false,
+    "skill": "THW_Skill_HeavyStab",
+    "isCanDrop": true,
+    "manual_intor": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "reward_id": 0
+  },
+  "nodes": [
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword",
+      "position": [
+        0.0,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -15,
+      "sprite": "",
+      "game_object_id": 10701,
+      "transform_id": 35668,
+      "active": true,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0,
+        0,
+        0.014999999664723873
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon",
+      "position": [
+        0.0,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -15,
+      "sprite": "5632",
+      "game_object_id": 9610,
+      "transform_id": 34665,
+      "active": true,
+      "renderer_enabled": true,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon/ice_imbue",
+      "position": [
+        0.0,
+        -85.19999980926514
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 12259,
+      "transform_id": 44630,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.8519999980926514,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon/electricity_imbue",
+      "position": [
+        0.0,
+        -81.69999718666077
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 21080,
+      "transform_id": 39135,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.8169999718666077,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon/imbue_effect",
+      "position": [
+        0.4999999888241291,
+        -87.5
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -20,
+      "sprite": "8949",
+      "game_object_id": 17996,
+      "transform_id": 41604,
+      "active": false,
+      "renderer_enabled": true,
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.004999999888241291,
+        0.875,
+        0.004999999888241291
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon/fire_imbue",
+      "position": [
+        0.0,
+        -86.59999966621399
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 17571,
+      "transform_id": 44456,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.8659999966621399,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/THW_ironSword/noumenon/poison_imbue",
+      "position": [
+        0.0,
+        -85.39999723434448
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 17506,
+      "transform_id": 39740,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.8539999723434448,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    }
+  ],
+  "controller_mapping": {
+    "name": "THW",
+    "base_controller": "HeroBase",
+    "base_controller_id": 4934,
+    "mapping": {
+      "idle": "THW_idle",
+      "move": "THW_move",
+      "beAttackedA": "THW_beAttackedA",
+      "fellDown": "THW_fellDown",
+      "die": "THW_die",
+      "jump": "THW_jump",
+      "attackA": "THW_attackA",
+      "attackAA": "THW_attackAA",
+      "jump_attack": "THW_jump_attack",
+      "beAttackedB": "THW_beAttackedB",
+      "dashAttack": "THW_dashAttack",
+      "run": "THW_run",
+      "jump_attack_end": "THW_jump_attack_end",
+      "itemActivate": "THW_itemActivate",
+      "drinkPotion": "drinkPotion",
+      "attackAAA": "THW_attackAAA",
+      "attackAAAA": "THW_attackAAAA",
+      "revive": "revive",
+      "pray": "pray",
+      "specialAction": "THW_spAction",
+      "trapped": "THW_pelt",
+      "specialAction2": "THW_spAction3",
+      "attackAB": "THW_attackAB",
+      "attackAAB": "THW_attackAAB",
+      "attackAAAB": "THW_attackAAAB",
+      "attackAAAAB": "THW_attackAAAAB"
+    }
+  }
+}

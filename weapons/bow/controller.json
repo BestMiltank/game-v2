@@ -1,0 +1,138 @@
+{
+  "scope": "standing normal attacks only; source override PPtrs and HeroBase transitions",
+  "controller_sha256": "fa183b2d3e12b75fc5a6f961227b95a436d1eeda474939877dbf211040d94a34",
+  "override_sha256": "7ef001b528bc682b661ac59f7fc988342ea8cc5d5ee2b9dac3dc1d8bde6bff9c",
+  "states": {
+    "idle": {
+      "clip": "bow_idle",
+      "speed": 1.0,
+      "transitions": []
+    },
+    "attackA": {
+      "clip": "bow_attackA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "attackAA",
+          "exit": 0.699999988079071,
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "a_aa",
+              "value": true
+            }
+          ]
+        },
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "a_aa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "a_ab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    "attackAA": {
+      "clip": "bow_attackAA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "attackAAA",
+          "exit": 0.699999988079071,
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aa_aaa",
+              "value": true
+            }
+          ]
+        },
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aa_aaa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "aa_aab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    "attackAAA": {
+      "clip": "bow_attackAAAA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aaa_aaaa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "aaa_aaab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1809 @@
+{
+  "scope": "29 source clips with authored expressions; no changes to transforms, timing or visibility",
+  "allowed_clips": [
+    "THW_idle",
+    "THW_move",
+    "THW_attackA",
+    "THW_attackAA",
+    "THW_attackAAA",
+    "THW_attackAAAA",
+    "THW_attackAB",
+    "THW_attackAAB",
+    "THW_attackAAAB",
+    "THW_attackAAAAB",
+    "spear_idle",
+    "spear_move",
+    "spear_attackA",
+    "spear_attackAA",
+    "spear_attackAAA",
+    "spear_attackAB",
+    "spear_attackAAB",
+    "spear_attackAAAB",
+    "bow_idle",
+    "bow_move",
+    "bow_attackA",
+    "bow_attackAA",
+    "bow_attackAAAA"
+  ],
+  "assets": {
+    "cast/moss/head": {
+      "name": "cast/moss/head",
+      "path": "res://character/art/cast/moss/head.png",
+      "size": [
+        292,
+        304
+      ],
+      "offset": [
+        -116.80000174045563,
+        -262.5999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/hair": {
+      "name": "cast/moss/hair",
+      "path": "res://character/art/cast/moss/hair.png",
+      "size": [
+        376,
+        317
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/eyes": {
+      "name": "cast/moss/eyes",
+      "path": "res://character/art/cast/moss/eyes.png",
+      "size": [
+        160,
+        111
+      ],
+      "offset": [
+        -80.0,
+        -49.499998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/clothes": {
+      "name": "cast/moss/clothes",
+      "path": "res://character/art/cast/moss/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/shoulder": {
+      "name": "cast/moss/shoulder",
+      "path": "res://character/art/cast/moss/shoulder.png",
+      "size": [
+        152,
+        111
+      ],
+      "offset": [
+        -107.92739868164062,
+        -32.15242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/hand": {
+      "name": "cast/moss/hand",
+      "path": "res://character/art/cast/moss/hand.png",
+      "size": [
+        124,
+        116
+      ],
+      "offset": [
+        -62.0,
+        -58.0
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/foot": {
+      "name": "cast/moss/foot",
+      "path": "res://character/art/cast/moss/foot.png",
+      "size": [
+        135,
+        88
+      ],
+      "offset": [
+        -67.5,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/moss/leg": {
+      "name": "cast/moss/leg",
+      "path": "res://character/art/cast/moss/leg.png",
+      "size": [
+        128,
+        110
+      ],
+      "offset": [
+        -71.37110900878906,
+        -30.876340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/moss/body": {
+      "name": "cast/moss/body",
+      "path": "res://character/art/cast/moss/body.png",
+      "size": [
+        217,
+        200
+      ],
+      "offset": [
+        -128.12601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/head": {
+      "name": "cast/ember/head",
+      "path": "res://character/art/cast/ember/head.png",
+      "size": [
+        292,
+        303
+      ],
+      "offset": [
+        -116.80000174045563,
+        -262.0999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/hair": {
+      "name": "cast/ember/hair",
+      "path": "res://character/art/cast/ember/hair.png",
+      "size": [
+        376,
+        339
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/eyes": {
+      "name": "cast/ember/eyes",
+      "path": "res://character/art/cast/ember/eyes.png",
+      "size": [
+        160,
+        110
+      ],
+      "offset": [
+        -80.0,
+        -48.999998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/clothes": {
+      "name": "cast/ember/clothes",
+      "path": "res://character/art/cast/ember/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/shoulder": {
+      "name": "cast/ember/shoulder",
+      "path": "res://character/art/cast/ember/shoulder.png",
+      "size": [
+        152,
+        111
+      ],
+      "offset": [
+        -107.92739868164062,
+        -32.15242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/hand": {
+      "name": "cast/ember/hand",
+      "path": "res://character/art/cast/ember/hand.png",
+      "size": [
+        124,
+        114
+      ],
+      "offset": [
+        -62.0,
+        -57.0
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/foot": {
+      "name": "cast/ember/foot",
+      "path": "res://character/art/cast/ember/foot.png",
+      "size": [
+        135,
+        88
+      ],
+      "offset": [
+        -67.5,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/ember/leg": {
+      "name": "cast/ember/leg",
+      "path": "res://character/art/cast/ember/leg.png",
+      "size": [
+        128,
+        109
+      ],
+      "offset": [
+        -71.37110900878906,
+        -30.376340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/ember/body": {
+      "name": "cast/ember/body",
+      "path": "res://character/art/cast/ember/body.png",
+      "size": [
+        218,
+        200
+      ],
+      "offset": [
+        -128.62601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/head": {
+      "name": "cast/salt/head",
+      "path": "res://character/art/cast/salt/head.png",
+      "size": [
+        292,
+        304
+      ],
+      "offset": [
+        -116.80000174045563,
+        -262.5999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/hair": {
+      "name": "cast/salt/hair",
+      "path": "res://character/art/cast/salt/hair.png",
+      "size": [
+        376,
+        296
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/eyes": {
+      "name": "cast/salt/eyes",
+      "path": "res://character/art/cast/salt/eyes.png",
+      "size": [
+        160,
+        103
+      ],
+      "offset": [
+        -80.0,
+        -45.499998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/clothes": {
+      "name": "cast/salt/clothes",
+      "path": "res://character/art/cast/salt/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/shoulder": {
+      "name": "cast/salt/shoulder",
+      "path": "res://character/art/cast/salt/shoulder.png",
+      "size": [
+        152,
+        115
+      ],
+      "offset": [
+        -107.92739868164062,
+        -34.15242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/hand": {
+      "name": "cast/salt/hand",
+      "path": "res://character/art/cast/salt/hand.png",
+      "size": [
+        124,
+        112
+      ],
+      "offset": [
+        -62.0,
+        -56.0
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/foot": {
+      "name": "cast/salt/foot",
+      "path": "res://character/art/cast/salt/foot.png",
+      "size": [
+        133,
+        88
+      ],
+      "offset": [
+        -66.5,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/salt/leg": {
+      "name": "cast/salt/leg",
+      "path": "res://character/art/cast/salt/leg.png",
+      "size": [
+        128,
+        109
+      ],
+      "offset": [
+        -71.37110900878906,
+        -30.376340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/salt/body": {
+      "name": "cast/salt/body",
+      "path": "res://character/art/cast/salt/body.png",
+      "size": [
+        216,
+        200
+      ],
+      "offset": [
+        -127.62601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/head": {
+      "name": "cast/copper/head",
+      "path": "res://character/art/cast/copper/head.png",
+      "size": [
+        292,
+        305
+      ],
+      "offset": [
+        -116.80000174045563,
+        -263.0999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/hair": {
+      "name": "cast/copper/hair",
+      "path": "res://character/art/cast/copper/hair.png",
+      "size": [
+        376,
+        322
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/eyes": {
+      "name": "cast/copper/eyes",
+      "path": "res://character/art/cast/copper/eyes.png",
+      "size": [
+        160,
+        113
+      ],
+      "offset": [
+        -80.0,
+        -50.499998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/clothes": {
+      "name": "cast/copper/clothes",
+      "path": "res://character/art/cast/copper/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/shoulder": {
+      "name": "cast/copper/shoulder",
+      "path": "res://character/art/cast/copper/shoulder.png",
+      "size": [
+        152,
+        113
+      ],
+      "offset": [
+        -107.92739868164062,
+        -33.15242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/hand": {
+      "name": "cast/copper/hand",
+      "path": "res://character/art/cast/copper/hand.png",
+      "size": [
+        124,
+        112
+      ],
+      "offset": [
+        -62.0,
+        -56.0
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/foot": {
+      "name": "cast/copper/foot",
+      "path": "res://character/art/cast/copper/foot.png",
+      "size": [
+        134,
+        88
+      ],
+      "offset": [
+        -67.0,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/copper/leg": {
+      "name": "cast/copper/leg",
+      "path": "res://character/art/cast/copper/leg.png",
+      "size": [
+        128,
+        109
+      ],
+      "offset": [
+        -71.37110900878906,
+        -30.376340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/copper/body": {
+      "name": "cast/copper/body",
+      "path": "res://character/art/cast/copper/body.png",
+      "size": [
+        217,
+        200
+      ],
+      "offset": [
+        -128.12601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/head": {
+      "name": "cast/dusk/head",
+      "path": "res://character/art/cast/dusk/head.png",
+      "size": [
+        292,
+        304
+      ],
+      "offset": [
+        -116.80000174045563,
+        -262.5999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/hair": {
+      "name": "cast/dusk/hair",
+      "path": "res://character/art/cast/dusk/hair.png",
+      "size": [
+        376,
+        295
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/eyes": {
+      "name": "cast/dusk/eyes",
+      "path": "res://character/art/cast/dusk/eyes.png",
+      "size": [
+        160,
+        96
+      ],
+      "offset": [
+        -80.0,
+        -41.999998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/clothes": {
+      "name": "cast/dusk/clothes",
+      "path": "res://character/art/cast/dusk/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/shoulder": {
+      "name": "cast/dusk/shoulder",
+      "path": "res://character/art/cast/dusk/shoulder.png",
+      "size": [
+        152,
+        112
+      ],
+      "offset": [
+        -107.92739868164062,
+        -32.65242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/hand": {
+      "name": "cast/dusk/hand",
+      "path": "res://character/art/cast/dusk/hand.png",
+      "size": [
+        124,
+        115
+      ],
+      "offset": [
+        -62.0,
+        -57.5
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/foot": {
+      "name": "cast/dusk/foot",
+      "path": "res://character/art/cast/dusk/foot.png",
+      "size": [
+        134,
+        88
+      ],
+      "offset": [
+        -67.0,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/dusk/leg": {
+      "name": "cast/dusk/leg",
+      "path": "res://character/art/cast/dusk/leg.png",
+      "size": [
+        128,
+        111
+      ],
+      "offset": [
+        -71.37110900878906,
+        -31.376340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/dusk/body": {
+      "name": "cast/dusk/body",
+      "path": "res://character/art/cast/dusk/body.png",
+      "size": [
+        209,
+        200
+      ],
+      "offset": [
+        -124.12601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/head": {
+      "name": "cast/frost/head",
+      "path": "res://character/art/cast/frost/head.png",
+      "size": [
+        292,
+        301
+      ],
+      "offset": [
+        -116.80000174045563,
+        -261.0999981164932
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/hair": {
+      "name": "cast/frost/hair",
+      "path": "res://character/art/cast/frost/hair.png",
+      "size": [
+        376,
+        309
+      ],
+      "offset": [
+        -137.80304384231567,
+        -288.19656217098236
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/eyes": {
+      "name": "cast/frost/eyes",
+      "path": "res://character/art/cast/frost/eyes.png",
+      "size": [
+        160,
+        112
+      ],
+      "offset": [
+        -80.0,
+        -49.999998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/clothes": {
+      "name": "cast/frost/clothes",
+      "path": "res://character/art/cast/frost/clothes.png",
+      "size": [
+        292,
+        220
+      ],
+      "offset": [
+        -157.30309319496155,
+        -66.55056595802307
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/shoulder": {
+      "name": "cast/frost/shoulder",
+      "path": "res://character/art/cast/frost/shoulder.png",
+      "size": [
+        152,
+        111
+      ],
+      "offset": [
+        -107.92739868164062,
+        -32.15242910385132
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/hand": {
+      "name": "cast/frost/hand",
+      "path": "res://character/art/cast/frost/hand.png",
+      "size": [
+        124,
+        115
+      ],
+      "offset": [
+        -62.0,
+        -57.5
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/foot": {
+      "name": "cast/frost/foot",
+      "path": "res://character/art/cast/frost/foot.png",
+      "size": [
+        139,
+        88
+      ],
+      "offset": [
+        -69.5,
+        -44.0
+      ],
+      "scale": 0.25,
+      "visual_fit": {
+        "width": 0.84,
+        "down": 4.0
+      }
+    },
+    "cast/frost/leg": {
+      "name": "cast/frost/leg",
+      "path": "res://character/art/cast/frost/leg.png",
+      "size": [
+        128,
+        111
+      ],
+      "offset": [
+        -71.37110900878906,
+        -31.376340866088867
+      ],
+      "scale": 0.25
+    },
+    "cast/frost/body": {
+      "name": "cast/frost/body",
+      "path": "res://character/art/cast/frost/body.png",
+      "size": [
+        207,
+        200
+      ],
+      "offset": [
+        -123.12601613998413,
+        -106.94517493247986
+      ],
+      "scale": 0.25
+    },
+    "cast/shared/eyes_stateB": {
+      "name": "cast/shared/eyes_stateB",
+      "path": "res://character/art/cast/shared/eyes_stateB.png",
+      "size": [
+        146,
+        120
+      ],
+      "offset": [
+        -73.0,
+        -53.999998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/shared/eyes_stateC": {
+      "name": "cast/shared/eyes_stateC",
+      "path": "res://character/art/cast/shared/eyes_stateC.png",
+      "size": [
+        157,
+        120
+      ],
+      "offset": [
+        -78.5,
+        -53.999998569488525
+      ],
+      "scale": 0.25
+    },
+    "cast/shared/eyes_stateD": {
+      "name": "cast/shared/eyes_stateD",
+      "path": "res://character/art/cast/shared/eyes_stateD.png",
+      "size": [
+        151,
+        116
+      ],
+      "offset": [
+        -68.70000290870667,
+        -58.399996757507324
+      ],
+      "scale": 0.25
+    },
+    "cast/shared/mouth": {
+      "name": "cast/shared/mouth",
+      "path": "res://character/art/cast/shared/mouth.png",
+      "size": [
+        86,
+        45
+      ],
+      "offset": [
+        -35.10386538505554,
+        -14.399998486042023
+      ],
+      "scale": 0.25
+    }
+  },
+  "presets": [
+    {
+      "id": "moss",
+      "name": "苔径斥候",
+      "parts": {
+        "noumenon/body/head": "cast/moss/head",
+        "noumenon/body/head/hair": "cast/moss/hair",
+        "noumenon/body/head/eyes": "cast/moss/eyes",
+        "noumenon/body/clothes": "cast/moss/clothes",
+        "noumenon/body/shoulderArmor": "cast/moss/shoulder",
+        "noumenon/Lhand": "cast/moss/hand",
+        "noumenon/Rhand": "cast/moss/hand",
+        "noumenon/Lfoot": "cast/moss/foot",
+        "noumenon/Rfoot": "cast/moss/foot",
+        "noumenon/body/L_leg": "cast/moss/leg",
+        "noumenon/body/R_leg": "cast/moss/leg",
+        "noumenon/body": "cast/moss/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    },
+    {
+      "id": "ember",
+      "name": "余烬卫士",
+      "parts": {
+        "noumenon/body/head": "cast/ember/head",
+        "noumenon/body/head/hair": "cast/ember/hair",
+        "noumenon/body/head/eyes": "cast/ember/eyes",
+        "noumenon/body/clothes": "cast/ember/clothes",
+        "noumenon/body/shoulderArmor": "cast/ember/shoulder",
+        "noumenon/Lhand": "cast/ember/hand",
+        "noumenon/Rhand": "cast/ember/hand",
+        "noumenon/Lfoot": "cast/ember/foot",
+        "noumenon/Rfoot": "cast/ember/foot",
+        "noumenon/body/L_leg": "cast/ember/leg",
+        "noumenon/body/R_leg": "cast/ember/leg",
+        "noumenon/body": "cast/ember/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    },
+    {
+      "id": "salt",
+      "name": "盐风信使",
+      "parts": {
+        "noumenon/body/head": "cast/salt/head",
+        "noumenon/body/head/hair": "cast/salt/hair",
+        "noumenon/body/head/eyes": "cast/salt/eyes",
+        "noumenon/body/clothes": "cast/salt/clothes",
+        "noumenon/body/shoulderArmor": "cast/salt/shoulder",
+        "noumenon/Lhand": "cast/salt/hand",
+        "noumenon/Rhand": "cast/salt/hand",
+        "noumenon/Lfoot": "cast/salt/foot",
+        "noumenon/Rfoot": "cast/salt/foot",
+        "noumenon/body/L_leg": "cast/salt/leg",
+        "noumenon/body/R_leg": "cast/salt/leg",
+        "noumenon/body": "cast/salt/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    },
+    {
+      "id": "copper",
+      "name": "铜扣工匠",
+      "parts": {
+        "noumenon/body/head": "cast/copper/head",
+        "noumenon/body/head/hair": "cast/copper/hair",
+        "noumenon/body/head/eyes": "cast/copper/eyes",
+        "noumenon/body/clothes": "cast/copper/clothes",
+        "noumenon/body/shoulderArmor": "cast/copper/shoulder",
+        "noumenon/Lhand": "cast/copper/hand",
+        "noumenon/Rhand": "cast/copper/hand",
+        "noumenon/Lfoot": "cast/copper/foot",
+        "noumenon/Rfoot": "cast/copper/foot",
+        "noumenon/body/L_leg": "cast/copper/leg",
+        "noumenon/body/R_leg": "cast/copper/leg",
+        "noumenon/body": "cast/copper/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    },
+    {
+      "id": "dusk",
+      "name": "暮色抄写员",
+      "parts": {
+        "noumenon/body/head": "cast/dusk/head",
+        "noumenon/body/head/hair": "cast/dusk/hair",
+        "noumenon/body/head/eyes": "cast/dusk/eyes",
+        "noumenon/body/clothes": "cast/dusk/clothes",
+        "noumenon/body/shoulderArmor": "cast/dusk/shoulder",
+        "noumenon/Lhand": "cast/dusk/hand",
+        "noumenon/Rhand": "cast/dusk/hand",
+        "noumenon/Lfoot": "cast/dusk/foot",
+        "noumenon/Rfoot": "cast/dusk/foot",
+        "noumenon/body/L_leg": "cast/dusk/leg",
+        "noumenon/body/R_leg": "cast/dusk/leg",
+        "noumenon/body": "cast/dusk/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    },
+    {
+      "id": "frost",
+      "name": "霜途旅人",
+      "parts": {
+        "noumenon/body/head": "cast/frost/head",
+        "noumenon/body/head/hair": "cast/frost/hair",
+        "noumenon/body/head/eyes": "cast/frost/eyes",
+        "noumenon/body/clothes": "cast/frost/clothes",
+        "noumenon/body/shoulderArmor": "cast/frost/shoulder",
+        "noumenon/Lhand": "cast/frost/hand",
+        "noumenon/Rhand": "cast/frost/hand",
+        "noumenon/Lfoot": "cast/frost/foot",
+        "noumenon/Rfoot": "cast/frost/foot",
+        "noumenon/body/L_leg": "cast/frost/leg",
+        "noumenon/body/R_leg": "cast/frost/leg",
+        "noumenon/body": "cast/frost/body",
+        "noumenon/body/head/helmet": "",
+        "noumenon/body/head/faceFeature": "",
+        "noumenon/body/head/eyes_stateB": "cast/shared/eyes_stateB",
+        "noumenon/body/head/eyes_stateC": "cast/shared/eyes_stateC",
+        "noumenon/body/head/eyes_stateD": "cast/shared/eyes_stateD"
+      }
+    }
+  ],
+  "registration": [
+    {
+      "asset": "cast/moss/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "299d7cf2ab9efee1769fe54a05085c4ad548ee2273e3e7e5fbf528a1e9c33475",
+      "crop_bbox": [
+        101,
+        97,
+        319,
+        324
+      ],
+      "source_extent_fit": 0.3348623853211009,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "b24371eca5ffc277f53f6e4c71716c0ac5cc21bea4bfe6d418411d7e723a4c90",
+      "crop_bbox": [
+        41,
+        68,
+        378,
+        352
+      ],
+      "source_extent_fit": 0.2789317507418398,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "d60b16cf287da2d5c6c4b745ddde4a3580b9b60fa166f3702c5f0f968db4c8c3",
+      "crop_bbox": [
+        132,
+        156,
+        289,
+        265
+      ],
+      "source_extent_fit": 0.25477707006369427,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "e9e6e236e4b940edb6f025f95231fa0ea0fdae8fa7feddf39c4bac91b41cb8c7",
+      "crop_bbox": [
+        136,
+        156,
+        284,
+        264
+      ],
+      "source_extent_fit": 0.25675675675675674,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "353f114aba36417e2f2fa11f85439671481ee9758276145e521f0c18902e4560",
+      "crop_bbox": [
+        148,
+        152,
+        272,
+        268
+      ],
+      "source_extent_fit": 0.25,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "f8262fde1d53d4514034659c803a5aa46362d2de428630ca65a50c63e6b93f1d",
+      "crop_bbox": [
+        137,
+        163,
+        283,
+        258
+      ],
+      "source_extent_fit": 0.23157894736842105,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "48bc7830ca152f1c205bcb9d7698c807c6101712e38a7232d4c95713b1f92d3c",
+      "crop_bbox": [
+        146,
+        156,
+        273,
+        265
+      ],
+      "source_extent_fit": 0.25196850393700787,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/moss/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "b9a337fbe2c0c3e24d39273cf9ff893521f555b9eb5484ae3dce24b97a33ca13",
+      "crop_bbox": [
+        109,
+        116,
+        312,
+        303
+      ],
+      "source_extent_fit": 0.26737967914438504,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "1db478f201daadf692bfb3559cd6d9400796dfe79beca52365cdc4d2cc674f53",
+      "crop_bbox": [
+        99,
+        95,
+        321,
+        325
+      ],
+      "source_extent_fit": 0.32882882882882886,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "4393a04b01b74ba9563d966fcd5cc67d51b1b57a4555ed6e94494fc009292cb3",
+      "crop_bbox": [
+        43,
+        59,
+        377,
+        360
+      ],
+      "source_extent_fit": 0.281437125748503,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "da2a03582bd9b373307bdf313fce9611849f86e92de313dd3a50faa39b282b0a",
+      "crop_bbox": [
+        125,
+        151,
+        295,
+        268
+      ],
+      "source_extent_fit": 0.23529411764705882,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "d23387ba9a8b2f9ba6e5ea0a5ee8b516c77c157d2e81f649468c961d44cee9eb",
+      "crop_bbox": [
+        133,
+        154,
+        286,
+        266
+      ],
+      "source_extent_fit": 0.24836601307189543,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "65860d77865e669f8551c0cf7e995d375e67dc6d2592ec7c46e4d672318c4b26",
+      "crop_bbox": [
+        145,
+        150,
+        275,
+        270
+      ],
+      "source_extent_fit": 0.23846153846153847,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "9cb1ed81d123b9075c6027813b95243603d32e652ab2bed43df510da4aff6b0e",
+      "crop_bbox": [
+        133,
+        159,
+        288,
+        260
+      ],
+      "source_extent_fit": 0.21782178217821782,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "57463f31f941eae964619677224f5d0279421c95f58064593d23ba60565eb459",
+      "crop_bbox": [
+        145,
+        154,
+        276,
+        266
+      ],
+      "source_extent_fit": 0.24427480916030533,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/ember/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "9fb67a833345c6a20bac83c81bc55c9b27b405e01e0bc9785d75744ef36a380f",
+      "crop_bbox": [
+        108,
+        116,
+        313,
+        304
+      ],
+      "source_extent_fit": 0.26595744680851063,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "091e2260ba329d9a03c0b0f890f93d7072b45ab26ad383a9fd8924baec20233d",
+      "crop_bbox": [
+        101,
+        96,
+        320,
+        324
+      ],
+      "source_extent_fit": 0.3333333333333333,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "f16238e8334204233440f379d56a635dcb8ad38aeeabe9eaea5f02589d049a4e",
+      "crop_bbox": [
+        28,
+        67,
+        391,
+        353
+      ],
+      "source_extent_fit": 0.25895316804407714,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "b490ca2afbbe94e624300d344f73a0fd11681fd2a5f0e6c66499e44f12b10834",
+      "crop_bbox": [
+        128,
+        157,
+        292,
+        263
+      ],
+      "source_extent_fit": 0.24390243902439024,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "529bd2367c2fc71b350ff6e4081185c9051ef279e0de07bbe03d78088ce662a5",
+      "crop_bbox": [
+        136,
+        154,
+        284,
+        266
+      ],
+      "source_extent_fit": 0.25675675675675674,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "5ab12e07c9421ce24905227b6da8829e3560c40c860fd7851de0df1210dae578",
+      "crop_bbox": [
+        146,
+        152,
+        273,
+        267
+      ],
+      "source_extent_fit": 0.2440944881889764,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "b136fd21c479514bb2ce949e30e1f0b39bbaffc96b63f860d1fdb28128cdb2c8",
+      "crop_bbox": [
+        136,
+        161,
+        284,
+        259
+      ],
+      "source_extent_fit": 0.22448979591836735,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "743b3b7c1a5f0b00d63e70112f275a0be64a127ded9ca1239d7068caabbfc9b8",
+      "crop_bbox": [
+        145,
+        155,
+        274,
+        265
+      ],
+      "source_extent_fit": 0.24806201550387597,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/salt/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "4abf7fa080df4dc8709591dbb6d7720bfe6c424954ce79d4c1d7264d56bbf3cd",
+      "crop_bbox": [
+        107,
+        115,
+        313,
+        306
+      ],
+      "source_extent_fit": 0.2617801047120419,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "cc7c7b2fb8c40e8794201831eddd4781732a37882e33930092560bc083ef42a9",
+      "crop_bbox": [
+        101,
+        96,
+        320,
+        325
+      ],
+      "source_extent_fit": 0.3333333333333333,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "e3d1b5dc93d3b9666235e004d41e766332499118a0149c77cd5f7ae728fd95f8",
+      "crop_bbox": [
+        41,
+        66,
+        378,
+        355
+      ],
+      "source_extent_fit": 0.2789317507418398,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "f8ff026f30f78ae89e7890e73e7a54ac3f0c8648aa39cffe9cc152e538850699",
+      "crop_bbox": [
+        131,
+        154,
+        290,
+        266
+      ],
+      "source_extent_fit": 0.25157232704402516,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "548992117d892e855418e769c4de49a4de023086f6e334ddad7b3ece5f506c15",
+      "crop_bbox": [
+        135,
+        155,
+        284,
+        266
+      ],
+      "source_extent_fit": 0.2550335570469799,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "f5c73d6f15e74fe8606af06d11b0320bc0fcaee5d0c842eba0a2a61890fe8a9c",
+      "crop_bbox": [
+        145,
+        151,
+        274,
+        268
+      ],
+      "source_extent_fit": 0.24031007751937986,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "e8d9d7af5ceee11390912e5d7c9a9a52b1bcdfb53a00493a8693dd8ffd3fb6ed",
+      "crop_bbox": [
+        136,
+        162,
+        284,
+        259
+      ],
+      "source_extent_fit": 0.2268041237113402,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "d914f2f9b88d55ba13bdb5c5dc51a8ea06e7d0888ea24d1a08f6504c4f3ffd3d",
+      "crop_bbox": [
+        145,
+        154,
+        276,
+        266
+      ],
+      "source_extent_fit": 0.24427480916030533,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/copper/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "3045d209d62662f1dffc4aa5e921cc4ffa3d47fa6e2db1b98b57b91e9d1adefa",
+      "crop_bbox": [
+        108,
+        116,
+        312,
+        304
+      ],
+      "source_extent_fit": 0.26595744680851063,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "8fae8596b11b3ab42025000b77907fac558667984d2a1bd031879d6c09df8ed4",
+      "crop_bbox": [
+        101,
+        96,
+        320,
+        324
+      ],
+      "source_extent_fit": 0.3333333333333333,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "5a309268d16b0e199018777983f1935548b70efa52f672cb4b0d3f3749e133b2",
+      "crop_bbox": [
+        34,
+        73,
+        385,
+        348
+      ],
+      "source_extent_fit": 0.2678062678062678,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "ae256aca822f1b3e575817e275401c0a92d21b1f85d681e36b89382be7c87885",
+      "crop_bbox": [
+        115,
+        153,
+        305,
+        267
+      ],
+      "source_extent_fit": 0.21052631578947367,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "26e8b975a62032f5b248e5e9e9b6fd3e5be167857d59d291b77d954bafa3a799",
+      "crop_bbox": [
+        134,
+        155,
+        285,
+        266
+      ],
+      "source_extent_fit": 0.25165562913907286,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "3c71901920a21eb1270f4ebe4bcd3fde8445df19aae9a9e209a61f4fd7709928",
+      "crop_bbox": [
+        147,
+        151,
+        273,
+        268
+      ],
+      "source_extent_fit": 0.24603174603174602,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "0e15dc18fc0f01a366f3a0692e3cc1615d71d3f3febf537a90bddbde35acbd89",
+      "crop_bbox": [
+        136,
+        162,
+        284,
+        259
+      ],
+      "source_extent_fit": 0.2268041237113402,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "db9e09f0a39d63d749ef639d8508fcfb4e2dd8a6d0c63727d0a3afd8ab5db38a",
+      "crop_bbox": [
+        146,
+        155,
+        274,
+        266
+      ],
+      "source_extent_fit": 0.25,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/dusk/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "6ee92c6d0cfea4d49b42de5427326d6ae8104ff6311ae2f925d378ec65544cb6",
+      "crop_bbox": [
+        110,
+        115,
+        309,
+        305
+      ],
+      "source_extent_fit": 0.2631578947368421,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/head",
+      "source_slot_sprite": "8895",
+      "input_sha256": "6969b0bc2280a032eeec21b40a615e5dedefaccbd8caf549131aad0c712c574e",
+      "crop_bbox": [
+        99,
+        96,
+        320,
+        324
+      ],
+      "source_extent_fit": 0.33031674208144796,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/hair",
+      "source_slot_sprite": "7192",
+      "input_sha256": "704e86028a69b66b2c997d87c258e19774314490464db39c603b337889fa19a9",
+      "crop_bbox": [
+        37,
+        68,
+        383,
+        352
+      ],
+      "source_extent_fit": 0.27167630057803466,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/eyes",
+      "source_slot_sprite": "6276",
+      "input_sha256": "9116811fa2e00272097cdb73a1de26d3bd41d3a4ab051432cb11f7b1b9fc21f8",
+      "crop_bbox": [
+        130,
+        154,
+        290,
+        266
+      ],
+      "source_extent_fit": 0.25,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/shoulder",
+      "source_slot_sprite": "7093",
+      "input_sha256": "8b0f416ee5bfe892cc7bcceca53e6ac06a75182d5f95ea45fd4066a3a5436d20",
+      "crop_bbox": [
+        132,
+        152,
+        289,
+        267
+      ],
+      "source_extent_fit": 0.24203821656050956,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/hand",
+      "source_slot_sprite": "8492",
+      "input_sha256": "d7b14aa71f7211bcd8d388c2445898adbc7d430353ffc204acfe07c86d079a25",
+      "crop_bbox": [
+        146,
+        151,
+        273,
+        269
+      ],
+      "source_extent_fit": 0.2440944881889764,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/foot",
+      "source_slot_sprite": "8403",
+      "input_sha256": "4979fc73e8317232b86ef6e0b2c801c6d2f8682f446c7fe641658df8748404e9",
+      "crop_bbox": [
+        133,
+        162,
+        286,
+        259
+      ],
+      "source_extent_fit": 0.2268041237113402,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/leg",
+      "source_slot_sprite": "9108",
+      "input_sha256": "359fd3353fdd0f1468ba53df8d9f3716a8c657adc646df6ad9b63eb63303f2be",
+      "crop_bbox": [
+        145,
+        154,
+        274,
+        266
+      ],
+      "source_extent_fit": 0.24806201550387597,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/frost/body",
+      "source_slot_sprite": "8931",
+      "input_sha256": "d414542a0e5db2a5e56439edabdfaac31d62218c3b948ee124e13ccb70aa7bca",
+      "crop_bbox": [
+        112,
+        116,
+        307,
+        304
+      ],
+      "source_extent_fit": 0.26595744680851063,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/shared/eyes_stateB",
+      "source_slot_sprite": "7395",
+      "input_sha256": "f8aee4d2e018f95b48a3da4efe215a617674f8a0b4375ea44e9b9251c13f5792",
+      "crop_bbox": [
+        133,
+        147,
+        286,
+        273
+      ],
+      "source_extent_fit": 0.23809523809523808,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/shared/eyes_stateC",
+      "source_slot_sprite": "7168",
+      "input_sha256": "89fbcb93024cfb60c9d834ba48608911ffd9540777aac9c4b9217212085b4a7a",
+      "crop_bbox": [
+        132,
+        150,
+        288,
+        269
+      ],
+      "source_extent_fit": 0.25210084033613445,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/shared/eyes_stateD",
+      "source_slot_sprite": "5951",
+      "input_sha256": "2525949b9d99c21810e26c2afd95ce30e86aeeb4db225b5ff2fec71b053f321c",
+      "crop_bbox": [
+        125,
+        145,
+        294,
+        275
+      ],
+      "source_extent_fit": 0.2230769230769231,
+      "generated_art": true
+    },
+    {
+      "asset": "cast/shared/mouth",
+      "source_slot_sprite": "7128",
+      "input_sha256": "008f2a98fd90bf9a32d6879c8acb9141ac709c70b97a4adac1e1db62c1ffcc9e",
+      "crop_bbox": [
+        42,
+        121,
+        378,
+        298
+      ],
+      "source_extent_fit": 0.06547619047619048,
+      "generated_art": true,
+      "authored_face_registration": {
+        "rule": "uniform fit below all eye alpha bounds and above common chin; one source pixel eye gap",
+        "chin_y_by_preset": [
+          9.850000470876694,
+          9.725000470876694,
+          9.850000470876694,
+          9.975000470876694,
+          9.350000470876694,
+          9.725000470876694
+        ],
+        "source_bbox_offset": [
+          -36.10386538505554,
+          2.270676612854004
+        ],
+        "eye_bottom_y_by_preset": [
+          -3.2250000834465027,
+          -3.3500000834465027,
+          -4.225000083446503,
+          -2.9750000834465027,
+          -5.100000083446503,
+          -3.1000000834465027
+        ],
+        "minimum_top_y": -1.9750000834465027,
+        "eye_safe_fit": 0.9847826568976693,
+        "authored_offset": [
+          -35.10386538505554,
+          -14.399998486042023
+        ],
+        "source_transform_unchanged": true
+      }
+    },
+    {
+      "asset": "cast/moss/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/moss-raw.png",
+      "input_sha256": "f43af332733795dc3b976d605ccc3c59d4090a4cdefd0c70fe3909dbedcab31e",
+      "crop_bbox": [
+        183,
+        139,
+        1267,
+        949
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.2617283950617284,
+      "paste": [
+        2,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    },
+    {
+      "asset": "cast/ember/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/ember-raw.png",
+      "input_sha256": "454ead4ad964d395617753dc0d4bb7b3de3bccadefdaa5d3efa9070731a6fddc",
+      "crop_bbox": [
+        191,
+        137,
+        1231,
+        940
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.2640099626400996,
+      "paste": [
+        6,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    },
+    {
+      "asset": "cast/salt/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/salt-raw.png",
+      "input_sha256": "18b11aed96b987e0661ec2d9a3359277f5374ba3e4925a858c59ab7d6c5e7157",
+      "crop_bbox": [
+        185,
+        138,
+        1230,
+        959
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.2582216808769793,
+      "paste": [
+        9,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    },
+    {
+      "asset": "cast/copper/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/copper-raw.png",
+      "input_sha256": "ed18e4288011d19b757c0d46d8d60e30927ff8a6d776f4a5c3e97e33abcf484e",
+      "crop_bbox": [
+        185,
+        137,
+        1257,
+        952
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.26012269938650306,
+      "paste": [
+        4,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    },
+    {
+      "asset": "cast/dusk/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/dusk-raw.png",
+      "input_sha256": "2befa6da68c5a3bf8a57a118a31992e5a80a037041b76e1930931edccc426789",
+      "crop_bbox": [
+        188,
+        130,
+        1236,
+        951
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.2582216808769793,
+      "paste": [
+        8,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    },
+    {
+      "asset": "cast/frost/clothes",
+      "source_slot_sprite": "5690",
+      "generated_art": true,
+      "input": "production/art/modular-adventurers-v1/clothes-v2/frost-raw.png",
+      "input_sha256": "5c38a31d0d18682621d0103b3ab3fb0d1d33b69956ac993d59f3f5f072ae8a4c",
+      "crop_bbox": [
+        184,
+        129,
+        1208,
+        981
+      ],
+      "source_opaque_bbox": [
+        0,
+        1,
+        72,
+        54
+      ],
+      "uniform_scale": 0.24882629107981222,
+      "paste": [
+        16,
+        4
+      ],
+      "registration": "original canvas/pivot; uniform fit to opaque garment envelope; authored asymmetric hem"
+    }
+  ],
+  "sprite_remap": {
+    "7128": "cast/shared/mouth"
+  }
+}

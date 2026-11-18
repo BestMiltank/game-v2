@@ -1,0 +1,509 @@
+{
+  "equipment_id": 95545,
+  "source": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 18106
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 16777216,
+      "m_PathID": 47898951680
+    },
+    "m_Name": "",
+    "isNeedSorting": true,
+    "isSortingComplex": false,
+    "sortingObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "index_str": "#H001",
+    "m_dropConditions": {
+      "gameRound": 1,
+      "stageLevel": 0,
+      "stageType": 0,
+      "stageIndex": 0
+    },
+    "itemName": "Wooden Bow",
+    "price": 20,
+    "icon": {
+      "m_FileID": 0,
+      "m_PathID": 8039
+    },
+    "visible": true,
+    "itemNameForShow": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "Wood Bow",
+        "木弓",
+        "Arco de Madera",
+        "Деревянный лук ",
+        "木の弓",
+        "Holzbogen",
+        "木弓",
+        "Arco di Legno",
+        "Arc en Bois"
+      ]
+    },
+    "intro": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "<color=#EEEE00>Bow</color> - An ordinary wooden bow. \\nATK+10. SKILL: Fast shot. ",
+        "<color=#EEEE00>弓</color> - 一张普通的木弓. \\n攻击+10. 技能: 连续射击. ",
+        "<color=#EEEE00>Arco</color> - Un arco de madera ordinario. \\nATK+10. HABILIDAD: Disparo Veloz. ",
+        "<color=#EEEE00>Лук</color> - Обычный деревянный лук. \\nАТК+10. Навык: быстрая стрельба. ",
+        "<color=#EEEE00>弓</color> -　普通な木の弓. \\n攻撃+10. スキル: 連続射撃. ",
+        "<color=#EEEE00>Bogen</color> - Ein gewöhnlicher Bogen aus Holz. \\nANG+10. FÄHIGKEIT: Schnellschuss. ",
+        "<color=#EEEE00>弓</color> - 一張普通的木弓. \\n攻擊+10. 技能: 連續射擊.",
+        "<color=#EEEE00>Arco</color> - Un comune arco di legno.\\nATT+10. ABILITÀ: Tiro rapido. ",
+        "<color=#EEEE00>Arc</color> - Un arc en bois ordinaire. \\nATK + 10. Compétence: Tir Rapide."
+      ]
+    },
+    "pickupDialog": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "type": 0,
+    "category": 9,
+    "main_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "off_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 14256
+    },
+    "helmet_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmetBack_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "head_spEffect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "haircut_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "clothes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoulder_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "glove_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "foot_effect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "reserve": "",
+    "basicAttributes": [
+      {
+        "type": 0,
+        "value": 10,
+        "reserve": "",
+        "index": 0
+      }
+    ],
+    "weaponAdditionAttributes": [],
+    "weaponCategory_of_additionAttributes": [],
+    "appendRandomAttr1": 20,
+    "appendRandomAttr2": 0,
+    "appendRandomAttr3": 0,
+    "fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 17096
+    },
+    "special_fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "isRandomSkill": false,
+    "skill": "bow_Fast_Shoot_Normal",
+    "isCanDrop": true,
+    "manual_intor": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "reward_id": 0
+  },
+  "nodes": [
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow",
+      "position": [
+        0.0,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -15,
+      "sprite": "",
+      "game_object_id": 14256,
+      "transform_id": 40540,
+      "active": true,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0,
+        0,
+        0.014999999664723873
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon",
+      "position": [
+        0.0,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -15,
+      "sprite": "6534",
+      "game_object_id": 10210,
+      "transform_id": 36694,
+      "active": true,
+      "renderer_enabled": true,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon/electricity_imbue",
+      "position": [
+        3.200000151991844,
+        -1.4000000432133675
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 100,
+      "sprite": "",
+      "game_object_id": 20169,
+      "transform_id": 40456,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.03200000151991844,
+        0.014000000432133675,
+        -0.11500000208616257
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon/fire_imbue",
+      "position": [
+        7.800000160932541,
+        2.800000086426735
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 10821,
+      "transform_id": 39051,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.07800000160932541,
+        -0.02800000086426735,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon/ice_imbue",
+      "position": [
+        1.0999999940395355,
+        0.800000037997961
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 12708,
+      "transform_id": 36533,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.010999999940395355,
+        -0.00800000037997961,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon/poison_imbue",
+      "position": [
+        1.7999999225139618,
+        -0.4999999888241291
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 19447,
+      "transform_id": 43004,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.017999999225139618,
+        0.004999999888241291,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Lhand/Lweapon/BOW_woodenBow/noumenon/imbue_effect",
+      "position": [
+        0.9999999776482582,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -20,
+      "sprite": "8211",
+      "game_object_id": 20113,
+      "transform_id": 42402,
+      "active": false,
+      "renderer_enabled": true,
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.009999999776482582,
+        0.0,
+        0.004999999888241291
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    }
+  ]
+}

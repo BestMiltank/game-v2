@@ -1,0 +1,544 @@
+{
+  "equipment_id": 90961,
+  "source": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 17169
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 16777216,
+      "m_PathID": 47898951680
+    },
+    "m_Name": "",
+    "isNeedSorting": true,
+    "isSortingComplex": false,
+    "sortingObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "index_str": "#E001",
+    "m_dropConditions": {
+      "gameRound": 1,
+      "stageLevel": 0,
+      "stageType": 0,
+      "stageIndex": 0
+    },
+    "itemName": "Iron Spear",
+    "price": 20,
+    "icon": {
+      "m_FileID": 0,
+      "m_PathID": 7035
+    },
+    "visible": true,
+    "itemNameForShow": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "Iron Spear",
+        "铁枪",
+        "Lanza de Hierro",
+        "Железное копьё ",
+        "鉄の槍",
+        "Eiserner Speer",
+        "鐵槍",
+        "Lancia di Ferro",
+        "Lance de Fer"
+      ]
+    },
+    "intro": {
+      "num": 9,
+      "keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "values": [
+        "<color=#6A5ACD>Spear</color> - A spear made from iron. \\nATK+10. SKILL: Stormy stab. ",
+        "<color=#6A5ACD>长枪</color> - 一把普通的铁质长枪. \\n攻击+10. 技能: 连续突刺. ",
+        "<color=#6A5ACD>Lanza</color> - Lanza de Hierro. \\nATK+10. HABILIDAD: Tormenta de Cortes. ",
+        "<color=#6A5ACD>Копьё</color> - Простое копьё с железным наконечником. \\nАТК+10. Навык: стремительные удары. ",
+        "<color=#6A5ACD>槍</color> - 鉄の槍. 語るに足るところはない. \\n攻撃+10. スキル: 連続突き. ",
+        "<color=#6A5ACD>Speer</color> - Ein Speer aus Eisen. \\nANG+10. FÄHIGKEIT: Sturmangriff. ",
+        "<color=#6A5ACD>長槍</color> - 一把普通的鐵質長槍. \\n攻擊+10. 技能: 連續突刺.",
+        "<color=#6A5ACD>Lancia</color> - Una lancia di ferro.\\nATT+10. ABILITÀ: Tempesta di colpi.",
+        "<color=#6A5ACD>Lance</color> -Une lance faite de fer. \\nATK+10. Compétence: Tempête de Coups."
+      ]
+    },
+    "pickupDialog": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "type": 0,
+    "category": 7,
+    "main_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 16489
+    },
+    "off_hand_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmet_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmetBack_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "head_spEffect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "haircut_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "clothes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoulder_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "glove_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "shoes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "foot_effect": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "reserve": "",
+    "basicAttributes": [
+      {
+        "type": 0,
+        "value": 10,
+        "reserve": "",
+        "index": 0
+      }
+    ],
+    "weaponAdditionAttributes": [],
+    "weaponCategory_of_additionAttributes": [],
+    "appendRandomAttr1": 20,
+    "appendRandomAttr2": 0,
+    "appendRandomAttr3": 0,
+    "fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "special_fly_prefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "isRandomSkill": false,
+    "skill": "spear_HeavyStab",
+    "isCanDrop": true,
+    "manual_intor": {
+      "num": 0,
+      "keys": [],
+      "values": []
+    },
+    "reward_id": 0
+  },
+  "nodes": [
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear",
+      "position": [
+        0.0,
+        -0.0
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 0,
+      "sprite": "",
+      "game_object_id": 16489,
+      "transform_id": 36615,
+      "active": true,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0,
+        0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon",
+      "position": [
+        0.0,
+        -20.000000298023224
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 0,
+      "sprite": "7035",
+      "game_object_id": 13846,
+      "transform_id": 37357,
+      "active": true,
+      "renderer_enabled": true,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        0.20000000298023224,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon/electricity_imbue",
+      "position": [
+        0.0,
+        -108.89999866485596
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 100,
+      "sprite": "",
+      "game_object_id": 18502,
+      "transform_id": 40317,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        1.0889999866485596,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon/ice_imbue",
+      "position": [
+        0.0,
+        -120.20000219345093
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 100,
+      "sprite": "",
+      "game_object_id": 14077,
+      "transform_id": 36114,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        1.2020000219345093,
+        -0.10000000149011612
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon/poison_imbue",
+      "position": [
+        0.0,
+        -122.50000238418579
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 17960,
+      "transform_id": 44548,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        1.225000023841858,
+        -0.08500000089406967
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon/fire_imbue",
+      "position": [
+        0.0,
+        -116.10000133514404
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": 85,
+      "sprite": "",
+      "game_object_id": 17266,
+      "transform_id": 39407,
+      "active": false,
+      "renderer_enabled": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.0,
+        1.1610000133514404,
+        -0.08500000089406967
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MonoBehaviour"
+      ]
+    },
+    {
+      "path": "noumenon/Rhand/Rweapon/SPEAR_ironSpear/noumenon/imbue_effect",
+      "position": [
+        0.4000000189989805,
+        -113.60000371932983
+      ],
+      "basis": [
+        1.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "z": -5,
+      "sprite": "8553",
+      "game_object_id": 20425,
+      "transform_id": 35510,
+      "active": false,
+      "renderer_enabled": true,
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "flip_x": false,
+      "flip_y": false,
+      "local_position": [
+        0.004000000189989805,
+        1.1360000371932983,
+        0.004999999888241291
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sorting_order": 0,
+      "sorting_layer": -1988241917
+    }
+  ],
+  "controller_mapping": {
+    "name": "SPEAR",
+    "base_controller": "HeroBase",
+    "base_controller_id": 4934,
+    "mapping": {
+      "idle": "spear_idle",
+      "move": "spear_move",
+      "beAttackedA": "spear_beAttackedA",
+      "fellDown": "spear_fellDown",
+      "die": "spear_die",
+      "jump": "spear_jump",
+      "beAttackedB": "spear_beAttackedB",
+      "jump_attack": "spear_jump_attack",
+      "dashAttack": "spear_dashAttack",
+      "run": "spear_run",
+      "jump_attack_end": "spear_jump_attack_end",
+      "attackA": "spear_attackA",
+      "attackAA": "spear_attackAA",
+      "itemActivate": "spear_itemActivate",
+      "drinkPotion": "drinkPotion",
+      "revive": "revive",
+      "pray": "pray",
+      "specialAction": "spear_spAction_charge",
+      "attackAAA": "spear_attackAAA",
+      "attackAAAA": "attackAAAA",
+      "trapped": "spear_pelt",
+      "specialAction2": "specialAction2",
+      "attackAB": "spear_attackAB",
+      "attackAAB": "spear_attackAAB",
+      "attackAAAB": "spear_attackAAAB",
+      "attackAAAAB": "attackAAAAB",
+      "skill": "spear_skillAction3_charge"
+    }
+  }
+}

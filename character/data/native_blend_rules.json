@@ -1,0 +1,8 @@
+{
+  "unity": "2021.3.25f1",
+  "scope": "Standing HeroBase attackA subset; source SPEAR attackA/idle Renderer.enabled CrossFade probe, Rebind and Update(0), binary search over all positive float32 weights.",
+  "false_to_true_min": 0.0010000169277191162,
+  "true_to_false_min": 0.9990000128746033,
+  "pptr_equal_weight": "source_clip",
+  "evidence": "production/qa/evidence/cast-attack/blend-probe.csv"
+}

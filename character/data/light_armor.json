@@ -1,0 +1,48 @@
+{
+  "source": "resources.assets / Light Armor / Equipment 95287",
+  "source_equipment": {
+    "name": "Light Armor",
+    "go": 11667,
+    "equipment": 95287,
+    "category": 4,
+    "helmet_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "helmetBack_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "haircut_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "clothes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 5690
+    },
+    "shoulder_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 7093
+    },
+    "glove_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 8492
+    },
+    "shoes_sprite": {
+      "m_FileID": 0,
+      "m_PathID": 8403
+    }
+  },
+  "appearance_method": "HumanAppearance.changeArmor after ResetAppearent",
+  "parts": {
+    "noumenon/body/head/helmet": "",
+    "noumenon/body/clothes": "5690",
+    "noumenon/body/shoulderArmor": "7093",
+    "noumenon/Lhand": "8492",
+    "noumenon/Rhand": "8492",
+    "noumenon/Lfoot": "8403",
+    "noumenon/Rfoot": "8403"
+  },
+  "haircut": ""
+}

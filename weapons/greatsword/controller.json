@@ -1,0 +1,180 @@
+{
+  "scope": "standing normal attacks only; source override PPtrs and HeroBase transitions",
+  "controller_sha256": "fa183b2d3e12b75fc5a6f961227b95a436d1eeda474939877dbf211040d94a34",
+  "override_sha256": "3efc399eb850f2986716ddfe063068f95e187b25506c7c1ca431e3ac32d66b43",
+  "states": {
+    "idle": {
+      "clip": "THW_idle",
+      "speed": 1.0,
+      "transitions": []
+    },
+    "attackA": {
+      "clip": "THW_attackA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "attackAA",
+          "exit": 0.699999988079071,
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "a_aa",
+              "value": true
+            }
+          ]
+        },
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "a_aa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "a_ab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    "attackAA": {
+      "clip": "THW_attackAA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "attackAAA",
+          "exit": 0.699999988079071,
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aa_aaa",
+              "value": true
+            }
+          ]
+        },
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aa_aaa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "aa_aab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    "attackAAA": {
+      "clip": "THW_attackAAA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "attackAAAA",
+          "exit": 0.699999988079071,
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aaa_aaaa",
+              "value": true
+            }
+          ]
+        },
+        {
+          "destination": "idle",
+          "exit": 0.699999988079071,
+          "duration": 0.25,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "aaa_aaaa",
+              "value": false
+            },
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "aaa_aaab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    "attackAAAA": {
+      "clip": "THW_attackAAAA",
+      "speed": 1.0,
+      "transitions": [
+        {
+          "destination": "idle",
+          "exit": 0.800000011920929,
+          "duration": 0.20000000298023224,
+          "offset": 0.0,
+          "conditions": [
+            {
+              "parameter": "to_move",
+              "value": false
+            },
+            {
+              "parameter": "attack_2_skill",
+              "value": false
+            },
+            {
+              "parameter": "to_sp",
+              "value": false
+            },
+            {
+              "parameter": "aaaa_aaaab",
+              "value": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
