@@ -86,19 +86,44 @@ func run() -> void:
 			if state.begins_with("attack"):
 				if state not in stages: stages.append(state)
 				if state not in buffered and actor.attacks.time>=.25 and actor.attacks.next=="":
-					tap(KEY_J)
+					if w == 3 and state == "attackAAA": key(KEY_J,true)
+					else: tap(KEY_J)
 					buffered.append(state)
 			arena.advance(1.0/30)
 			if not output.is_empty(): await capture(folder,n)
 			count=n+1
 			if n>10 and not actor.busy(): idle_frames+=1
 			if idle_frames>=15: break
-		check(stages.size()==[3,4,3,2][w] and not actor.busy(),"full combo "+str(w)+": "+str(stages))
+		key(KEY_J,false)
+		check(stages.size()==[3,4,3,4][w] and not actor.busy(),"full combo "+str(w)+": "+str(stages))
 		check(events.size()-event_count==(1 if w==3 else 0),"impact emitted once on hammer finisher")
 		if not output.is_empty():
 			var info={"fps":30,"frames":count,"events":events.slice(event_count)}
 			FileAccess.open(folder.path_join("capture.json"),FileAccess.WRITE).store_string(JSON.stringify(info))
 	check(events.size()==1 and events[0].audible,"audio starts on the sampled impact")
+	# A held third tap, a fourth tap, and a canceled hold must all end on the sweep.
+	for mode in ["carry","tap","pause","focus","late"]:
+		tap(KEY_J)
+		arena.advance(.20)
+		tap(KEY_J)
+		arena.advance(actor.rig.hammer_data.attacks[0].chain_at)
+		key(KEY_J,true)
+		arena.advance(actor.rig.hammer_data.attacks[1].chain_at)
+		check(actor.attacks.index==2,"third tap starts the sweep")
+		if mode!="carry":
+			key(KEY_J,false)
+			if mode=="late": arena.advance(.28)
+			key(KEY_J,true)
+			arena.advance(.08)
+			if mode=="pause":
+				tap(KEY_ESCAPE)
+				arena.advance(.5)
+				tap(KEY_ESCAPE)
+			elif mode=="focus": arena._notification(NOTIFICATION_APPLICATION_FOCUS_OUT)
+			elif mode=="tap": key(KEY_J,false)
+		arena.advance(.8)
+		key(KEY_J,false)
+		check(not actor.busy() and events.size()==1,"three taps stop on sweep: "+mode)
 	# Right boundary must stop the authored hammer travel too.
 	key(KEY_D,true)
 	arena.advance(10)
@@ -114,5 +139,22 @@ func run() -> void:
 	arena.advance(.01)
 	tap(KEY_Q)
 	check(actor.clip=="spear_idle" and not actor.rig.hammer.visible and actor.facing<0,"return from hammer to left-facing spear")
+	tap(KEY_E)
+	actor.position=Vector2.ZERO
+	var lights: Array[String]=[]
+	var light_frames:=0
+	var folder:=output.path_join("hammer-light")
+	if not output.is_empty(): DirAccess.make_dir_recursive_absolute(folder)
+	for n in range(80):
+		if n in [8,14,24]: tap(KEY_J)
+		arena.advance(1.0/30)
+		if actor.busy() and actor.attacks.state not in lights: lights.append(actor.attacks.state)
+		if not output.is_empty(): await capture(folder,n)
+		light_frames+=1
+		if n>10 and not actor.busy() and n>=60: break
+	check(lights==["attackA","attackAA","attackAAA"] and not actor.busy(),"left-facing three taps recover after sweep")
+	check(is_equal_approx(actor.position.x,-28.2*actor.DISPLAY_SCALE) and events.size()==1,"light chain travels left without a slam")
+	if not output.is_empty():
+		FileAccess.open(folder.path_join("capture.json"),FileAccess.WRITE).store_string(JSON.stringify({"fps":30,"frames":light_frames,"events":[]}))
 	print("YARD INPUT: ",errors.size()," failures")
 	quit(1 if errors.size() else 0)

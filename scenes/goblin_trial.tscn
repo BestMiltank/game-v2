@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="PackedScene" path="res://scenes/arena.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/goblin_trial.gd" id="2"]
+[ext_resource type="Script" path="res://enemies/raider/training_raider.gd" id="3"]
+
+[node name="GoblinTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+yard_title = "锤击测试 · 苔牙杂兵"
+[node name="Raider" type="Node2D" parent="Ground"]
+script = ExtResource("3")

@@ -1,25 +1,29 @@
 extends SceneTree
 ## Render matching poses for every look and facing in an isolated viewport.
-## The migration baseline is generated with the frozen old rig. Normal runs
-## only read the lossless reference images shipped with this project.
+## Source references use the frozen migration rig. Hammer references use the
+## authored weapon revision. Normal runs only read the shipped images.
 const TILE := Vector2i(220,280)
 const POSES := [
 	["bow_idle",0.0],["bow_move",0.15],["bow_attackA",0.24],["bow_attackAAAA",0.3],
 	["THW_idle",0.0],["THW_move",0.15],["THW_attackA",0.24],["THW_attackAAAA",0.3],
 	["spear_idle",0.0],["spear_move",0.15],["spear_attackA",0.24],["spear_attackAAA",0.3],
-	["hammer_idle",0.0],["hammer_move",0.15],["hammer_attackA",0.26],["hammer_attackAA",0.47365],
-	["hammer_attackAA",0.74909],["hammer_attackAA",0.86910],["hammer_attackAA",0.93576]]
+	["hammer_idle",0.0],["hammer_move",0.15],["hammer_attackA",0.26],["hammer_attackAAAA",0.47365],
+	["hammer_attackAAAA",0.74909],["hammer_attackAAAA",0.86910],["hammer_attackAAAA",0.93576],["hammer_attackAA",0.21]]
 func _initialize() -> void:
 	call_deferred("run")
 
 func run() -> void:
 	var baseline_dir := "res://tests/baseline"
-	var generate := false
+	var record_source := false
+	var record_hammer := false
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--record-baseline="):
 			baseline_dir = arg.trim_prefix("--record-baseline=")
-			generate = true
-	var rig_script = load("res://src/authored_hammer_rig.gd" if generate else "res://weapons/hammer/authored_hammer_rig.gd")
+			record_source = true
+		elif arg.begins_with("--record-hammer-baseline="):
+			baseline_dir = arg.trim_prefix("--record-hammer-baseline=")
+			record_hammer = true
+	var rig_script = load("res://src/authored_hammer_rig.gd" if record_source else "res://weapons/hammer/authored_hammer_rig.gd")
 	var view := SubViewport.new()
 	view.size = TILE*Vector2i(6,2)
 	view.transparent_bg=true
@@ -36,13 +40,18 @@ func run() -> void:
 			view.add_child(rig)
 			rigs.append(rig)
 	var failures := 0
+	var pose_count := 0
 	for index in POSES.size():
-		for rig in rigs: rig.sample(POSES[index][0],POSES[index][1])
+		var clip: String = POSES[index][0]
+		if record_source and clip.begins_with("hammer_"): continue
+		if record_hammer and not clip.begins_with("hammer_"): continue
+		pose_count += rigs.size()
+		for rig in rigs: rig.sample(clip,POSES[index][1])
 		await process_frame
 		await RenderingServer.frame_post_draw
 		var result := view.get_texture().get_image()
 		var file := baseline_dir.path_join("%02d.png"%index)
-		if generate:
+		if record_source or record_hammer:
 			if result.save_png(file)!=OK: failures+=1
 		else:
 			var expected:=Image.load_from_file(file)
@@ -58,5 +67,5 @@ func run() -> void:
 						if differences.mean>0.0001 or differences.root_mean_squared>0.002:
 							push_error("Pose %s look %d side %d: %s"%[POSES[index],col,row,differences])
 							failures+=1
-	print("PIXEL PARITY: ",POSES.size()*rigs.size()," poses, ",failures," failures")
+	print("PIXEL PARITY: ",pose_count," poses, ",failures," failures")
 	quit(1 if failures else 0)

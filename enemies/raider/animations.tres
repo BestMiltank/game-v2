@@ -1,0 +1,66 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://enemies/raider/idle.png" id="idle"]
+[ext_resource type="Texture2D" path="res://enemies/raider/hurt.png" id="hurt"]
+[ext_resource type="Texture2D" path="res://enemies/raider/death.png" id="death"]
+
+[sub_resource type="AtlasTexture" id="idle_0"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_0"]
+atlas = ExtResource("death")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_1"]
+atlas = ExtResource("death")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_2"]
+atlas = ExtResource("death")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_3"]
+atlas = ExtResource("death")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_4"]
+atlas = ExtResource("death")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="death_5"]
+atlas = ExtResource("death")
+region = Rect2(512, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="hurt_0"]
+atlas = ExtResource("hurt")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="hurt_1"]
+atlas = ExtResource("hurt")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="hurt_2"]
+atlas = ExtResource("hurt")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="hurt_3"]
+atlas = ExtResource("hurt")
+region = Rect2(256, 256, 256, 256)
+
+[resource]
+animations = [{"name": &"idle", "loop": true, "speed": 1.0, "frames": [{"duration": 0.25, "texture": SubResource("idle_0")}, {"duration": 0.25, "texture": SubResource("idle_1")}, {"duration": 0.25, "texture": SubResource("idle_2")}, {"duration": 0.25, "texture": SubResource("idle_3")}]},
+{"name": &"death", "loop": false, "speed": 1.0, "frames": [{"duration": 0.08, "texture": SubResource("death_0")}, {"duration": 0.1, "texture": SubResource("death_1")}, {"duration": 0.12, "texture": SubResource("death_2")}, {"duration": 0.1, "texture": SubResource("death_3")}, {"duration": 0.14, "texture": SubResource("death_4")}, {"duration": 0.18, "texture": SubResource("death_5")}]},
+{"name": &"hurt", "loop": false, "speed": 1.0, "frames": [{"duration": 0.1, "texture": SubResource("hurt_0")}, {"duration": 0.18, "texture": SubResource("hurt_1")}, {"duration": 0.18, "texture": SubResource("hurt_2")}, {"duration": 0.14, "texture": SubResource("hurt_3")}]}]

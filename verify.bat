@@ -12,6 +12,8 @@ for %%T in (cast_attacks authored_hammer hammer_leg_probe) do (
 call :run --script res://tests/pixel_parity.gd
 if errorlevel 1 exit /b 1
 call :run --script res://tests/arena_input.gd
+if errorlevel 1 exit /b 1
+call :run --script res://tests/goblin_trial.gd
 exit /b %errorlevel%
 
 :run

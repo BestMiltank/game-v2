@@ -2,6 +2,7 @@ extends Node2D
 ## Host resolves displacement synchronously, before a contact cue is positioned.
 signal displacement_requested(delta: Vector2)
 signal slam_contact(at: Vector2)
+signal hammer_contact(strike_id: int, stage: int, outline: PackedVector2Array)
 
 const SourceController = preload("res://weapons/standing_combo_controller.gd")
 const HammerController = preload("res://weapons/hammer/authored_hammer_controller.gd")
@@ -48,8 +49,13 @@ func attack(direction: Vector2) -> bool:
 			attacks.time = SourceController.f32(time / float(rig.restored.clips[clip].duration))
 	return attacks.attack()
 
+func release_attack() -> void:
+	if weapon_index == 3 and attacks != null:
+		attacks.release_attack()
+
 func set_paused(value: bool) -> void:
 	paused = value
+	if paused: release_attack()
 	impact.sound.stream_paused = value
 
 func advance(delta: float,direction: Vector2) -> void:
@@ -57,10 +63,16 @@ func advance(delta: float,direction: Vector2) -> void:
 	impact.advance(delta)
 	if busy():
 		if weapon_index==3:
-			var travel: float = attacks.advance(delta)
-			displacement_requested.emit(Vector2(facing*travel*DISPLAY_SCALE,0))
+			var travel: float = attacks.advance(delta,hammer_contact.has_connections())
+			var used := 0.0
+			for contact in attacks.contacts:
+				displacement_requested.emit(Vector2(facing*(contact.travel-used)*DISPLAY_SCALE,0))
+				used = contact.travel
+				rig.sample("hammer_attack"+"A".repeat(contact.stage+1),contact.time)
+				hammer_contact.emit(contact.id,contact.stage,rig.hammer.contact_outline(contact.stage==1))
+			displacement_requested.emit(Vector2(facing*(travel-used)*DISPLAY_SCALE,0))
 			if attacks.impact_age>=0:
-				rig.sample("hammer_attackAA",rig.hammer_data.attacks[1].impact_at)
+				rig.sample("hammer_attackAAAA",rig.hammer_data.attacks[3].impact_at)
 				var center := Vector3.ZERO
 				var cap: PackedVector3Array = rig.hammer.cap_world[0]
 				for vertex in cap: center += vertex

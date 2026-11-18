@@ -101,7 +101,8 @@ func sample(id: String, at: float) -> void:
 	# Hide the bound source equipment and its effects, never alter that data.
 	for row in source.equipment[weapon].nodes:
 		if sprites.has(row.path): sprites[row.path].hide()
-	hammer.pose(Vector3(pose[1],-float(pose[2])+air_height,pose[10]),pose[3],pose[9],hammer_data.height,hammer_data.grip_spacing,hammer_data.rear_grip_offset,pose[23])
+	hammer.pose(Vector3(pose[1],-float(pose[2])+air_height,pose[10]),pose[3],pose[9],
+		hammer_data.height,hammer_data.grip_spacing,hammer_data.rear_grip_offset,pose[23],pose[24],pose[25])
 	grip_points.assign([HammerWeapon.project(hammer.grip_world[0]),HammerWeapon.project(hammer.grip_world[1])])
 	var direction := HammerWeapon.project(hammer.shaft_direction)
 	# Original hammer adaptation: transport the spear's two distinct glove
@@ -147,11 +148,16 @@ func pose_at(index: int, at: float) -> Array:
 			var result: Array = a.duplicate()
 			for j in range(1,8): result[j] = lerpf(float(a[j]),float(b[j]),t)
 			for j in range(9,a.size()): result[j] = lerpf(float(a[j]),float(b[j]),t)
+			if is_equal_approx(a[0],hammer_data.attacks[index].get("drive_from",-1.0)):
+				# The boots use their planted curves while the shoulders and shaft drive into contact.
+				var drive := linear_t*linear_t
+				for column in [1,2,3,4,5,6,7,9,10,23,24,25]:
+					result[column] = lerpf(a[column],b[column],drive)
 			if is_equal_approx(a[0],hammer_data.attacks[index].get("swing_start_source",-1.0)):
 				# Planted downstroke: carry shaft speed into contact. The next key
 				# holds the entire head on the floor while the torso follows.
 				var swing := linear_t*linear_t
-				for column in [1,2,3,23]:
+				for column in [1,2,3,23,24]:
 					result[column] = lerpf(a[column],b[column],swing)
 			# Unwrapped roll angles pass each intermediate key without stopping
 			# angular velocity at every quarter-turn or taking the shortest arc.
